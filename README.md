@@ -6,14 +6,14 @@
 
 | Sl. No | Name                | Reg No.  | Task | Percentage |
 |--------|---------------------|----------|------|-----|
-| 1      | Ritesh Patidar      | 22210034 | Pre-processing of the Dataset | 16 |
-| 2      | Siddhesh Dosi       | 22210045 | Pretraining pipeline of the BERT model | 16 |
-| 3      | Anupam Sharma       | 22210006 | Documentation of the Finetuning notebook |16|
-| 4      | Kowsik Nandagopan D | 22250016 | Coding of Classification and QA Task |16|
-| 5      | Ankit Yadav         | 22270001 | Computation of the perplexity metric |16|
-| 6      | Sai Krishna Avula   | 22210036 | Documentation of the pre-training |2|
-| 7      | Hitesh lodwal       | 22210019 | Finetuning classification task and QA Task |16| 
-| 8      | Ayush Shrivastava   | 22210010 | Reading QA Task documentation |2|
+| 1      | Ritesh Patidar      | 22210034 | Pre-processing of the Dataset | 13.5 |
+| 2      | Siddhesh Dosi       | 22210045 | Pretraining pipeline of the BERT model |13.5|
+| 3      | Anupam Sharma       | 22210006 | Documentation of the Finetuning notebook |13.5|
+| 4      | Kowsik Nandagopan D | 22250016 | Coding of Classification and QA Task |13.5|
+| 5      | Ankit Yadav         | 22270001 | Computation of the perplexity metric |13.5|
+| 6      | Sai Krishna Avula   | 22210036 | Documentation of the pre-training |13.5|
+| 7      | Hitesh lodwal       | 22210019 | Finetuning classification task and QA Task |13.5| 
+| 8      | Ayush Shrivastava   | 22210010 | Reading QA Task documentation |5.5|
 
 ## Answers to the Question
 ### Pre-training Pipeline
