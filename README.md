@@ -36,10 +36,10 @@ Fine-tuning code and pipeline are provided in this repository under the name [be
  | **Task/Metric**    | **Accuracy** | **Precision** | **Recall** | **F1** | **Exact Match** | **METEOR** | **BLEU** | **ROUGE** |
 |--------------------|--------------|---------------|------------|--------|-----------------|------------|----------|-----------|
 | Classification     | 0.557        | 0.557         | 1.0        | 0.557  | NA              | NA         | NA       | NA        |
-| Question-Answering | NA           | NA            | NA         |        |                 |            |          |           |  
+| Question-Answering | NA           | NA            | NA         |   1.0     |     0.0            |    0.02        |     0.01     |      0.12     |  
 
 
-8. The number of parameters after finetuning the model is as follows, qa 1538  cls 1538
+8. The number of parameters after finetuning the model is as follows,
    
 |                        | **Number of Parameters** | **Reason** |
 |------------------------|--------------------------|------------|
@@ -50,4 +50,4 @@ Fine-tuning code and pipeline are provided in this repository under the name [be
  [Hitesh1501/squad](https://huggingface.co/Hitesh1501/squad)
 10. (a) The model gives **poor performace** because the pretaining task done for just five epochs which resulted in lack of language understanding by the BERT Model. We are receiving 5.02 perplexity because the model overfits on the pretraining dataset thus lacks the generalizability on the downstream task like Classification and Question-answering.
     
-    (b) 
+    (b)  The number of parameters in the _pre-trained_ model (BERT encoder architecture) is 109,514,298. In the paper, 110M parameters. The number we got through our experiment is approximately the same as defined in the paper. In Classification and QA the number of parameter are less than the pretrained model. In pretrained model the output head is of vocab size. In fine-tuning task the output head just contains the classification head , sometimes their might been a hidden layer between the 12th layer and the classification layer. More details are provided in answer corresponding 2 and 8. 
