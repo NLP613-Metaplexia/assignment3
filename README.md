@@ -13,7 +13,7 @@
 | 5      | Ankit Yadav         | 22270001 | Computation of the perplexity metric |12.5|
 | 6      | Sai Krishna Avula   | 22210036 | Documentation of the pre-training |12.5|
 | 7      | Hitesh lodwal       | 22210019 | Finetuning classification task and QA Task |12.5| 
-| 8      | Ayush Shrivastava   | 22210010 | Reading QA Task documentation |12.5|
+| 8      | Ayush Shrivastava   | 22210010 | Reading QA Task documentation, verification and review of code |12.5|
 
 ## Answers to the Question
 ### Pre-training Pipeline
