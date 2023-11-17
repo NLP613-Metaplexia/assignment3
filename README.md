@@ -39,13 +39,15 @@ Fine-tuning code and pipeline are provided in this repository under the name [be
 | Question-Answering | NA           | NA            | NA         |        |                 |            |          |           |  
 
 
-8. The number of parameters after finetuning the model is as follows,
+8. The number of parameters after finetuning the model is as follows, qa 1538  cls 1538
    
 |                        | **Number of Parameters** | **Reason** |
 |------------------------|--------------------------|------------|
-| BERT in Classification |                          |            |
-| BERT for QA Task       |                          |            |
+| BERT in Classification | 109,483,778              |   Number of parameter are less than the pretrained model because in pretrained language model output layer is of vocab size here there is one pooling layer and classification layer.         |
+| BERT for QA Task       | 108,893,186                  |   Number of parameter are less than the pretrained model because in pretrained language model output layer is of vocab size but here it lags pooling layer after 12th encoder. Additionally it has only classification head.          |
 
 9. We have pushed the model to the 🤗 repository. For the **Classification** task, the model is available in [Hitesh1501/sst2](https://huggingface.co/Hitesh1501/sst2). Similarly, for the **Question-Answering** task the fine-tuned model is in
  [Hitesh1501/squad](https://huggingface.co/Hitesh1501/squad)
-10. 
+10. (a) The model gives **poor performace** because the pretaining task done for just five epochs which resulted in lack of language understanding by the BERT Model. We are receiving 5.02 perplexity because the model overfits on the pretraining dataset thus lacks the generalizability on the downstream task like Classification and Question-answering.
+    
+    (b) 
