@@ -25,6 +25,19 @@ Pre-training code and pipeline are provided in this repository under the name [b
 5. We have pushed the model to the 🤗 repository [temporary0-0name/run_opt](https://huggingface.co/temporary0-0name/run_opt)
 ---   
 
+| Epoch | Perplexity |
+|-------|------------|
+| 1     | 904.00     |
+| 2     | 218.44     |
+| 3     | 17.65      |
+| 4     | 8.63       |
+| 5     | 6.8        |
+| 6     | 6.63       |
+| 7     | 6.66       |
+| 8     | 6.88       |
+| 9     | 8.46       |
+| 10    | 8.16       |
+
 ### Fine-tuning Pipeline
 Fine-tuning code and pipeline are provided in this repository under the name [bert_fine_tune.ipynb](https://github.com/NLP613-Metaplexia/assignment3/blob/main/bert_fine_tune.ipynb)
 
