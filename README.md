@@ -17,12 +17,13 @@
 
 ## Answers to the Question
 ### Pre-training Pipeline
-Pre-training code and pipeline are provided in this repository under the name [bert_pre_train.ipynb](https://github.com/NLP613-Metaplexia/assignment3/blob/main/bert_pre_train.ipynb)
+Pre-training code and pipeline are provided in this repository under the name [bert_pretraining_.ipynb](https://github.com/NLP613-Metaplexia/assignment3/blob/main/bert_pretraining_.ipynb)
 1. We selected [bert-base-uncased](https://huggingface.co/bert-base-uncased) from the 🤗 repository
 2. The number of parameters in the _pre-trained_ model (BERT encoder architecture) is 109,514,298. In the paper, 110M parameters. The number we got through our experiment is approximately the same as defined in the paper.
-3. We pretrained the model after re-initializing the weights and trained on the train split of the [wikitext-2-raw-v1](https://huggingface.co/datasets/wikitext/viewer/wikitext-2-raw-v1). We discovered that the best hyper-parameters for the task is `3e-4` learning rate, batch size of `32` weight decay of `0.1`, and number of epochs as 10.
-4. Perplexity of the model test split of the [wikitext-2-raw-v1](https://huggingface.co/datasets/wikitext/viewer/wikitext-2-raw-v1) came around **5.02**. We presume that the model has overfitted on the dataset; the test dataset is not able to genealise the understanding of the language model. 
-5. We have pushed the model to the 🤗 repository [temporary0-0name/run_opt](https://huggingface.co/temporary0-0name/run_opt)
+3. We pretrained the model after re-initializing the weights and trained on the train split of the [wikitext-2-raw-v1](https://huggingface.co/datasets/wikitext/viewer/wikitext-2-raw-v1). We discovered that the best hyper-parameters for the task are `3e-4` learning rate, batch size of `32` weight decay of `0.1`, and number of epochs as five; however, we have trained the model further up to 10 epochs.
+4. We found that the perplexity is increasing after five epochs, so we selected the model at ep 5 as the final. 
+5. Perplexity of the model test split of the [wikitext-2-raw-v1](https://huggingface.co/datasets/wikitext/viewer/wikitext-2-raw-v1) came around **6.8** with five epochs only. We presume that the model has overfitted on the dataset; the test dataset is not able to generalise the understanding of the language model. 
+6. We have pushed the model to the 🤗 repository [temporary0-0name/run_opt1](https://huggingface.co/temporary0-0name/run_opt1)
 ---   
 
 ### Fine-tuning Pipeline
