@@ -39,6 +39,7 @@ Pre-training code and pipeline are provided in this repository under the name [b
 | 9     | 8.46       |
 | 10    | 8.16       |
 
+---
 ### Fine-tuning Pipeline
 Fine-tuning code and pipeline are provided in this repository under the name [bert_fine_tune.ipynb](https://github.com/NLP613-Metaplexia/assignment3/blob/main/bert_fine_tune.ipynb)
 
